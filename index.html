@@ -3,31 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suneel | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Suneel Kumar Vuyyuru | Salesforce Developer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to Suneel's Portfolio</h1>
-    <p>Salesforce Developer | Lightning | Apex | CPQ</p>
+    <h1>Suneel Kumar Vuyyuru</h1>
+    <p>Certified Salesforce Developer | 4+ Years Experience</p>
+    <div class="contact">
+      <a href="mailto:suneelkumarvuyyuru@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/suneelkumarvuyyuru" target="_blank">LinkedIn</a>
+      <a href="https://trailblazer.me/id/svuyyuru4" target="_blank">Trailblazer</a>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I am a passionate Salesforce Developer with experience in Apex, LWC, CPQ, and more. I build custom solutions that solve real-world problems.</p>
-  </section>
+  <main>
+    <section>
+      <button class="collapsible">Summary</button>
+      <div class="content">
+        <ul>
+          <li>4+ Years Salesforce Developer/Admin Experience</li>
+          <li>5x Certified | Expert in Sales, Service & Experience Clouds</li>
+          <li>Proficient in Apex, LWC, APIs, Flows, Git, Integrations</li>
+          <li>Double Ranger in Trailhead with 9 Super Badges</li>
+        </ul>
+      </div>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Employee Management System (LWC + Apex)</li>
-      <li>Sales Commission Tracking System</li>
-      <li>Experience Cloud Portal</li>
-    </ul>
-  </section>
+      <button class="collapsible">Certifications</button>
+      <div class="content">
+        <ul>
+          <li>Salesforce Platform Developer I</li>
+          <li>Salesforce Platform App Builder</li>
+          <li>Salesforce Administrator</li>
+          <li>Salesforce AI Associate</li>
+          <li>Salesforce AI Specialist</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Projects</button>
+      <div class="content">
+        <h3>Skoda Service Claims – Katzion (Jan 2024 - Mar 2024)</h3>
+        <ul>
+          <li>Developed custom fields & replicated VW service functionality</li>
+          <li>Customized LWC, Summary Page, Integrated Git</li>
+        </ul>
+
+        <h3>Employee Management System – Cloud Peritus (2022-2023)</h3>
+        <ul>
+          <li>Custom objects, flows, Apex, Community, GitHub deployments</li>
+        </ul>
+
+        <h3>Insurance Commission Tracker – Alchemy Innovators (2021-2022)</h3>
+        <ul>
+          <li>REST API Integration, Triggers, Debugging & Testing</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">Technical Skills</button>
+      <div class="content">
+        <p>Salesforce, Apex, LWC, Flows, API Integration, Git, Agile, Reports & Dashboards, Communities</p>
+      </div>
+
+      <button class="collapsible">Education</button>
+      <div class="content">
+        <p>B.Tech in Electrical and Electronics Engineering – VVIT, JNTUK (2018)</p>
+      </div>
+
+      <button class="collapsible">Strengths</button>
+      <div class="content">
+        <p>Quick Learner, Active Trailblazer, Great Communicator, Strong Team Player</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Connect with me on <a href="https://github.com/VUYYURUSUNEEL" target="_blank">GitHub</a></p>
+    <p>&copy; 2024 Suneel Kumar Vuyyuru</p>
   </footer>
+
+  <script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
 </body>
 </html>
